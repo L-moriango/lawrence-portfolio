@@ -35,8 +35,8 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="relative z-40 px-4">
-      <div className="flex container mx-auto max-w-[1340px]">
+    <section className="relative z-40  py-4">
+      <div className="flex container mx-auto max-w-[1340px] -mb-10">
         <ul className="relative grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-8 -top-12 place-items-center md:justify-items-center md:mx-auto lg:place-items-stretch lg:ml-20 -mx-2">
           {services.map((service, index) => {
             return (

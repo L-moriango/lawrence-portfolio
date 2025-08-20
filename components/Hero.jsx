@@ -5,6 +5,7 @@ import { TypeAnimation } from "react-type-animation";
 import { Link as ScrollLink } from "react-scroll";
 import { SiMinutemailer } from "react-icons/si";
 import { FiDownload } from "react-icons/fi";
+import { motion } from "framer-motion";
 
 // components
 import RotatingShape from "./RotatingShape";
@@ -74,13 +75,30 @@ const Hero = () => {
       id="home"
       suppressHydrationWarning
     >
-      /* header */
       <Header />
       <div className="container mx-auto h-full">
         <div
           className="relative z-20 h-full w-full xl:max-w-[768px] flex flex-col
-              items-center xl:items-start justify-center xl:text-left pt-10"
+              items-center xl:items-start justify-center xl:text-left pt-8 px-4 "
         >
+          {/* PROFILE IMAGE */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.3, ease: "easeOut" }}
+            className="mb-6 block xl:hidden"
+          >
+            <Image
+              src="/assets/hero/me-profile.jpeg"
+              width={130}
+              height={130}
+              alt="Lawrence Moriango"
+              className="mt-16 rounded-full border-2 border-accent object-cover shadow-lg"
+              priority
+            />
+          </motion.div>
+          {/* PROFILE  */}
+
           <h1 className="h1 mb-2 max-w-[320px] xl:max-w-none text-center xl:text-left">
             <span className="text-accent">I Build And </span>Design <br />
             <span className="text-accent">robust... </span>scalable <br />
@@ -94,7 +112,7 @@ const Hero = () => {
               className="ml-2 xl:ml-4"
             />
           </h1>
-          <p className="sm:lead mx-w-[476px] mt-2 mb-8 text-center xl:text-left">
+          <p className="sm:lead mx-w-[476px] mt-2 mb-4 text-center xl:text-left">
             Delivering powerful, custom websites and
             <span className="md:flex items-center justify-center">
               applications that blend aesthetics with performance.
@@ -103,14 +121,14 @@ const Hero = () => {
           <div className="items-center justify-center flex flex-col lg:flex-row lg:gap-8 mb-8">
             <button
               onClick={handleClick}
-              className="btn btn-accent mb-8 lg:mb-0 flex items-center gap-3"
+              className="btn btn-accent mb-6 lg:mb-0 flex items-center gap-3"
             >
               <FiDownload className="size-5" />
               Download CV
             </button>
 
             <ScrollLink to="contact" smooth>
-              <button className="btn btn-accent mb-8 lg:mb-0 flex items-center gap-3">
+              <button className="btn btn-accent -mb-2 lg:mb-0 flex items-center gap-3">
                 <SiMinutemailer className="size-5" />
                 Contact Me
               </button>

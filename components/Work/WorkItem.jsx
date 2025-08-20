@@ -40,6 +40,7 @@ const WorkItem = ({ href, category, img, title, tool, description }) => {
             priority
             quality={100}
             alt={title}
+            unoptimized={img.endsWith(".gif")}
             className="object-cover group-hover:scale-105 transition-all duration-500 ease-in-out"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />

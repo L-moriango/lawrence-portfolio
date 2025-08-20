@@ -7,7 +7,7 @@ import AnimatedText from "./AnimatedText";
 
 const About = () => {
   return (
-    <section className=" relative pt-12 pb-24" id="about">
+    <section className=" relative pt-12 pb-12" id="about">
       <div className=" container mx-auto h-full">
         <div className="h-full flex items-center justify-center">
           {/* image + shapes*/}
@@ -82,7 +82,7 @@ const About = () => {
               expertise to deliver exceptional and impactful digital experiences and robust IT solutions.
             </p>
             {/* info items */}
-            <div className="flex flex-col lg:flex-row gap-12 xl:gap-6 max-w-max mx-auto xl:mx-0 items-center">
+            <div className="flex flex-col lg:flex-row gap-12 xl:gap-6 max-w-max mx-auto xl:mx-0 items-center ">
               {/* item 1 */}
               <div className="max-w-max">
                 <div className="uppercase font-bold text-primary text-center flex flex-col items-center gap-2"><FiMapPin className=" size-5 text-accent"/>Location</div>

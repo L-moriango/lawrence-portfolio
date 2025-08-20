@@ -91,7 +91,7 @@ const Contact = () => {
                     id="firstname"
                     name="firstname"
                     value={formData.firstname}
-                    className="input border border-primary/10 focus:border-accent outline-none rounded-lg w-full"
+                    className="input border border-primary/10 focus:border-accent outline-none rounded-lg w-full p-3"
                     placeholder="First Name"
                     required
                   />
@@ -110,7 +110,7 @@ const Contact = () => {
                     id="lastname"
                     name="lastname"
                     value={formData.lastname}
-                    className="input border border-primary/10 focus:border-accent outline-none rounded-lg w-full"
+                    className="input border border-primary/10 focus:border-accent outline-none rounded-lg w-full p-3"
                     placeholder="Last Name"
                     required
                   />
@@ -130,7 +130,7 @@ const Contact = () => {
                   id="email"
                   name="email"
                   value={formData.email}
-                  className="input border border-primary/10 focus:border-accent outline-none rounded-lg w-full"
+                  className="input border border-primary/10 focus:border-accent outline-none rounded-lg w-full p-3"
                   placeholder="youremail@email.com"
                   required
                 />
@@ -154,8 +154,8 @@ const Contact = () => {
                   id="phone"
                   name="phone"
                   value={formData.phone}
-                  className="input border border-primary/10 focus:border-accent outline-none rounded-lg w-full"
-                  placeholder="(+254) 711-668-974"
+                  className="input border border-primary/10 focus:border-accent outline-none rounded-lg w-full p-3"
+                  placeholder="+254 123-456-789"
                 />
               </div>
               {/* message field */}
@@ -171,7 +171,7 @@ const Contact = () => {
                   id="message"
                   name="message"
                   value={formData.message}
-                  className="textarea border border-primary/10 focus:border-accent outline-none rounded-lg w-full"
+                  className="textarea border border-primary/10 focus:border-accent outline-none rounded-lg w-full p-3"
                   placeholder="Leave me a message..."
                   rows={6}
                   required
