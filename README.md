@@ -1,11 +1,11 @@
-# Lawrence's Portfolio
+# My Portfolio
 
 Welcome to my personal **developer portfolio**!
 This project showcases my skills, projects, and experience as a **Software Developer & Network Engineer**.
 
-| ![Portfolio Preview](public/preview.png) |
+<!-- | ![Portfolio Preview](public/preview.png) |
 |:--:|
-| Portfolio Preview |
+| Portfolio Preview | -->
 
 ---
 
