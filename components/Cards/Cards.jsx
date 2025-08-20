@@ -104,7 +104,7 @@ const journey = [
   },
   {
     type: "experience",
-    company: "Freelance (Part-time)",
+    company: "Vijana Vision - Freelance (Part-time)",
     logoUrl: "assets/journey/experience/logo-1.svg",
     position: "Fullstack Developer",
     duration: "Aug 2024 - Present",
@@ -137,7 +137,7 @@ const journey = [
     type: "experience",
     company: "BillSasa Kenya",
     logoUrl: "assets/journey/experience/Billsasa-logo.svg",
-    position: "Co-Founder | ICT Manager | IT Specialist",
+    position: "Co-Founder | IT Specialist",
     duration: "Feb 2022 - Nov 2022",
     description:
       "Co-founded and managed the ICT department, overseeing all technical operations and support services.",
@@ -154,7 +154,7 @@ const journey = [
   {
     type: "experience",
     company: "National Housing Corporation (NHC)",
-    logoUrl: "assets/journey/experience/NHC-logo-1.svg",
+    logoUrl: "assets/journey/experience/nhc-logo-1.svg",
     position: "ICT Technical Support Assistant and Trainee",
     duration: "May 2019 - Nov 2019",
     description:

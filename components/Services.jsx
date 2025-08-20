@@ -1,13 +1,13 @@
 import Image from "next/image";
 
 const services = [
-    {
-      icon: "assets/services/icon-2.svg",
-      title: "Web Development",
-      description:
-        "Developing websites serving as powerful marketing tools and bring memorable brand experiences.",
-    },
-    {
+  {
+    icon: "assets/services/icon-2.svg",
+    title: "Web Development",
+    description:
+      "Developing websites serving as powerful marketing tools and bring memorable brand experiences.",
+  },
+  {
     icon: "assets/services/icon-3.svg",
     title: "E-commerce solutions",
     description:
@@ -37,7 +37,7 @@ const Services = () => {
   return (
     <section className="relative z-40 px-4">
       <div className="flex container mx-auto max-w-[1340px]">
-        <ul className="relative grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-8 -top-12 place-items-center lg:place-items-stretch  lg:ml-20 -mx-2">
+        <ul className="relative grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-8 -top-12 place-items-center md:justify-items-center md:mx-auto lg:place-items-stretch lg:ml-20 -mx-2">
           {services.map((service, index) => {
             return (
               <li

@@ -27,7 +27,7 @@ export async function GET(request) {
     // Construct the file path to the CV PDF
     const filePath = path.join(
       process.cwd(),
-      "private",
+      "public",
       "files",
       "Lawrence_Moriango_rCV.pdf"
     );

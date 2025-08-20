@@ -69,20 +69,24 @@ const Hero = () => {
   };
 
   return (
-    <section className="h-[800px] relative bg-accent/10 xl:bg-white" id="home" suppressHydrationWarning>
-      {/* header */}
+    <section
+      className="h-[800px] relative bg-accent/10 xl:bg-white"
+      id="home"
+      suppressHydrationWarning
+    >
+      /* header */
       <Header />
       <div className="container mx-auto h-full">
         <div
           className="relative z-20 h-full w-full xl:max-w-[768px] flex flex-col
-                items-center xl:items-start justify-center xl:text-left pt-10"
+              items-center xl:items-start justify-center xl:text-left pt-10"
         >
-          <h1 className="h1 mb-2 max-w-[320px] xl:max-w-none">
+          <h1 className="h1 mb-2 max-w-[320px] xl:max-w-none text-center xl:text-left">
             <span className="text-accent">I Build And </span>Design <br />
             <span className="text-accent">robust... </span>scalable <br />
             <TypeAnimation
               preRenderFirstString={true}
-              sequence={["Websites...", 200, "Apps", 200, "and Networks.", 200]}
+              sequence={["Websites,", 200, "Apps", 200, "and Networks.", 200]}
               speed={50}
               repeat={Infinity}
               wrapper="span"
@@ -90,11 +94,13 @@ const Hero = () => {
               className="ml-2 xl:ml-4"
             />
           </h1>
-          <p className="lead mx-w-[476px] mt-2 mb-8">
-            Delivering powerful, custom websites and <br />
-            applications that blend aesthetics with performance.
+          <p className="sm:lead mx-w-[476px] mt-2 mb-8 text-center xl:text-left">
+            Delivering powerful, custom websites and
+            <span className="md:flex items-center justify-center">
+              applications that blend aesthetics with performance.
+            </span>
           </p>
-          <div className=" items-center flex flex-col lg:flex-row lg:gap-8 mb-8">
+          <div className="items-center justify-center flex flex-col lg:flex-row lg:gap-8 mb-8">
             <button
               onClick={handleClick}
               className="btn btn-accent mb-8 lg:mb-0 flex items-center gap-3"

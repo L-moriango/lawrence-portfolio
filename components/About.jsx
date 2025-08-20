@@ -59,17 +59,17 @@ const About = () => {
             </div>
           </div>
           {/* text */}
-          <div className="text-center xl:text-left w-full xl:w-[50%] mx-auto xl:mx-0 flex flex-col gap-6">
-            <div>
+          <div className="flex flex-col items-center justify-center w-full xl:w-[50%] mx-auto xl:mx-0 gap-6 text-center">
+            <div className="w-full">
               <AnimatedText
                 text="Hi, I'm Lawrence."
                 textStyles="text-4xl font-bold text-primary mb-2"
               />
-              <p className="text-primary/90 text-lg py-1 ">
-                Network Support Engineer | Software Developer | IT Specialist
+              <p className="text-primary/90 text-lg py-1">
+                Network Support Engineer | Software Developer | Cybersec Associate
               </p>
             </div>
-            <p className="flex max-w-[680px] mx-2 xl:mx-0 mb-6  text-justify">
+            <p className="max-w-[768px] w-full mx-auto mb-6 text-justify">
               I design and develop scalable, secure and user-friendly websites and applications using modern technologies
               and best practices.
               <br />

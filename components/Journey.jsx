@@ -6,7 +6,7 @@ const Journey = () => {
         <section id="journey">
         <div>
             <AnimatedText text="My Professional Journey"
-                textStyles="h1 text-5xl mb-[30px] text-center"
+                textStyles="h1 text-5xl mb-[30px] text-center pt-4"
             />
             <Cards />
         </div>

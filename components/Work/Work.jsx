@@ -166,7 +166,7 @@ const Work = () => {
   };
 
   return (
-    <section className="pt-24" id="work">
+    <section className="pt-14" id="work">
       <div className="container mx-auto">
         <Tabs defaultValue="all" className="w-full flex flex-col">
           <div className="flex flex-col xl:flex-row items-center xl:items-start xl:justify-between mb-[30px]">
