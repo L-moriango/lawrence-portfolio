@@ -113,7 +113,7 @@ const Hero = () => {
             />
           </h1>
           <p className="sm:lead mx-w-[476px] mt-2 mb-4 text-center xl:text-left">
-            Delivering powerful, custom websites and
+            Delivering powerful, custom websites and {" "}
             <span className="md:flex items-center justify-center">
               applications that blend aesthetics with performance.
             </span>

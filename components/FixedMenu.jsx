@@ -8,6 +8,7 @@ import { FiMapPin, FiPhoneCall, FiMail } from "react-icons/fi";
 import Nav from "./Nav";
 import Socials from "./Socials";
 
+// Fixed menu component
 const FixedMenu = () => {
   const [showMenuButton, setShowMenuButton] = useState(false);
   const [showMenu, setShowMenu] = useState(false);

@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+// service data
 const services = [
   {
     icon: "assets/services/icon-2.svg",
@@ -33,6 +34,7 @@ const services = [
   },
 ];
 
+// Services component
 const Services = () => {
   return (
     <section className="relative z-40  py-4">

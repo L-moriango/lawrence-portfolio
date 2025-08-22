@@ -1,5 +1,5 @@
 "use client";
-import { animate, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const RotatingShape = ({ content, direction, duration }) => {
     // define the rotation animation

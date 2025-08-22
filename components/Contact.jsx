@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
-// form spree
-import { useForm, ValidationError } from "@formspree/react";
 import AnimatedText from "./AnimatedText";
 import Image from "next/image";
 import { FaCheckCircle } from "react-icons/fa";
 import { SiMinutemailer } from "react-icons/si";
+// Import form spree
+import { useForm, ValidationError } from "@formspree/react";
 
-
+// contact component handles the contact form functionality, including form submission and state management.
 const Contact = () => {
   const [state, handleSubmit] = useForm("xrbbkrap");
 

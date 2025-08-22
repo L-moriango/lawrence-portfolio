@@ -38,7 +38,7 @@ const journey = [
     institution: "Technical University of Mombasa (TUM)",
     logoUrl: "assets/journey/education/logo-1.svg",
     qualification: "Bachelor of Science in Information Technology",
-    duration: "2016 - 2024",
+    duration: "Sept 2016 - Dec 2024",
     description:
       "Gained knowledge and skills in software development, networking, cybersecurity, and database management. Developed a strong foundation in computer science principles and practices.",
   },
@@ -48,18 +48,9 @@ const journey = [
       "United States International University-Africa (Cyber Shujaa Program)",
     logoUrl: "assets/journey/education/institution-1.svg",
     qualification: "Cisco Ethical Hacking (CEH)",
-    duration: "Sept 2020",
+    duration: "Aug 2025",
     description:
       "Gained knowledge and skills in ethical hacking, penetration testing, and vulnerability assessment methodologies. Developed proficiency in using various security tools and techniques to identify and mitigate security risks.",
-  },
-  {
-    type: "education",
-    institution: "Cisco Networking Academy",
-    logoUrl: "assets/journey/education/cisco-logo-3.svg",
-    qualification: "Certified CCNA-(ENSA & SRWE), CCNP-ENCORE ",
-    duration: "Jan 2024 - Oct 2024",
-    description:
-      "Gained practical knowledge in designing, configuring, and managing network systems and infrastructure using Cisco devices-switches, routers, firewalls, and related technologies, along with experience in Mikrotik and Juniper.",
   },
   {
     type: "education",
@@ -72,10 +63,19 @@ const journey = [
   },
   {
     type: "education",
+    institution: "Cisco Networking Academy",
+    logoUrl: "assets/journey/education/cisco-logo-3.svg",
+    qualification: "Certified CCNA-(ENSA & SRWE), CCNP-ENCORE ",
+    duration: "Jan 2024 - Oct 2024",
+    description:
+      "Gained practical knowledge in designing, configuring, and managing network systems and infrastructure using Cisco devices-switches, routers, firewalls, and related technologies, along with experience in Mikrotik and Juniper.",
+  },
+  {
+    type: "education",
     institution: "IBM Academy",
     logoUrl: "assets/journey/education/IBM-logo.svg",
     qualification: "IBM Web Development Professional Cert",
-    duration: "Jul 2025 - Aug 2025",
+    duration: "April 2023",
     description:
       "Gained experience in front-end and back-end web development technologies, focusing on HTML, CSS, JavaScript, React, Node.js and databases.",
   },
@@ -344,7 +344,7 @@ const journey = [
 const Cards = () => {
   return (
     <>
-    {/* Tabs for different sections */}
+      {/* Tabs for different sections */}
       <Tabs
         defaultValue="education"
         className="w-full flex flex-col items-center"

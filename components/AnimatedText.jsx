@@ -1,6 +1,7 @@
 "use client";
 import { animate, motion } from "framer-motion";
 
+// Animation for each letter
 const letterAnimation = {
   initial: {
     y: "100%",
@@ -17,6 +18,7 @@ const letterAnimation = {
   }),
 };
 
+// Function to split the text into letters and animate each one
 const getLetter = (name) => {
   let letters = [];
   name.split("").forEach((letter, index) => {

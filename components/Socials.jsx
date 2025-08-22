@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { FaXTwitter, FaLinkedin, FaGithub, FaDiscord} from "react-icons/fa6";
 
+// component renders social media icons with links
 const socials = [
   {
     icon: <FaLinkedin />,

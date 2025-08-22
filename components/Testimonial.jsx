@@ -75,10 +75,12 @@ const Testimonial = () => {
   // state to store the active slide index
   const [activeSlide, setActiveSlide] = useState(0);
 
+  // callback functions to handle previous and next slide actions
   const handlePrevious = useCallback(() => {
     swiperRef?.slidePrev();
   }, [swiperRef]);
 
+  // callback function to handle next slide action
   const handleNext = useCallback(() => {
     swiperRef?.slideNext();
   }, [swiperRef]);
