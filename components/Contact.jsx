@@ -8,7 +8,17 @@ import { useForm, ValidationError } from "@formspree/react";
 
 // contact component handles the contact form functionality, including form submission and state management.
 const Contact = () => {
-  const [state, handleSubmit] = useForm("xrbbkrap");
+  const formId = process.env.NEXT_PUBLIC_FORMSPREE_ID;
+
+  if (!formId) {
+    return (
+      <span className="fixed bottom-4 right-4 bg-red-600 text-white text-sm px-4 py-2 rounded-lg shadow-lg animate-bounce">
+        ⚠️ Contact form API KEY unavailable. Check configuration.
+      </span>
+    );
+  }
+
+  const [state, handleSubmit] = useForm(formId);
 
   //state for form inputs
   const [formData, setFormData] = useState({
@@ -194,9 +204,8 @@ const Contact = () => {
                   <>
                     {/* show success message and icon with opacity transition */}
                     <div
-                      className={`flex items-center gap-3 absolute transition-opacity duration-500 ease-in-out ${
-                        showIcon ? "opacity-100" : "opacity-0"
-                      }`}
+                      className={`flex items-center gap-3 absolute transition-opacity duration-500 ease-in-out ${showIcon ? "opacity-100" : "opacity-0"
+                        }`}
                     >
                       <FaCheckCircle className="text-white text-lg" />
                       <span className="text-white text-lg">
@@ -205,11 +214,10 @@ const Contact = () => {
                     </div>
                     {/* button text */}
                     <span
-                      className={`absolute text-white text-lg transition-opacity duration-500 ease-in-out flex items-center gap-3 ${
-                        showIcon ? "opacity-0" : "opacity-100"
-                      }`}
+                      className={`absolute text-white text-lg transition-opacity duration-500 ease-in-out flex items-center gap-3 ${showIcon ? "opacity-0" : "opacity-100"
+                        }`}
                     >
-                      <SiMinutemailer className="size-5"/>Send Message
+                      <SiMinutemailer className="size-5" />Send Message
                     </span>
                   </>
                 )}
